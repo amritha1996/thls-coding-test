@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Front End Developer-AP</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- -HEADER STARTS- -->
+    <header>
+        <div class="container d-flex d-lg-block">
+            <div class="logo-area  justify-content-center pt-3 pt-lg-5 pb-1 web-view">
+                <a href="#">
+                    <img src="images/logo.svg" class="img-fluid" alt="logo" loading="lazy">
+                </a>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center w-100  pb-lg-3">
+                <!-- -SEARCH AREA - STARTS- -->
+                <form class="d-flex search-area w-100 justify-content-end justify-content-lg-start">
+                    <input id="main-search" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search" />
+                    <a href="#" class="btn act-btn" onclick="searchFunction()">
+                        <img src="images/search.svg" class="img-fluid" alt="search_icon" loading="lazy">
+                    </a>
+                </form>
+                <!-- SEARCH AREA - ENDS -->
+
+                <div class="logo-area justify-content-center pt-3 pt-lg-5 pb-1 mob-view">
+                    <a href="#">
+                        <img src="images/logo.svg" class="img-fluid" alt="logo" loading="lazy">
+                    </a>
+                </div>
+                <!-- NAVBAR - STARTS -->
+                <nav class="navbar custom-navbar navbar-expand-lg w-100 order-3 order-lg-2">
+                    <div class="container-fluid justify-content-end justify-content-lg-center">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2 gap-xl-4">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Spaces</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Products & Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Showrooms</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Company</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Media</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- NAVBAR - ENDS -->
+
+                <!-- FEATURES - START -->
+                <div
+                    class="d-flex features-area w-100 justify-content-lg-end justify-content-start order-2 order-lg-3 ">
+                    <a href="#" class="btn feat-btn act-btn orders d-none active">
+                        <img src="images/home.svg" class="img-fluid" alt="home" loading="lazy">
+                    </a>
+                    <a href="#" class="btn feat-btn act-btn">
+                        <img src="images/cart.svg" class="img-fluid" alt="cart" loading="lazy">
+                    </a>
+                    <a href="#" class="btn feat-btn act-btn">
+                        <img src="images/heart.svg" class="img-fluid" alt="wishlist" loading="lazy">
+                    </a>
+                    <a href="#" class="btn feat-btn act-btn">
+                        <img src="images/user.svg" class="img-fluid" alt="profile" loading="lazy">
+                    </a>
+                </div>
+                <!-- FEATURES - ENDS -->
+            </div>
+        </div>
+    </header>
+    <!-- -HEADER ENDS- -->
+
+    <!-- MAIN - STARTS -->
+    <main>
+        <section class="banner-area">
+            <div class="container py-4 py-lg-5 d-flex justify-content-end align-items-center">
+                <div class="content-area">
+                    <h1 class="mb-1 mb-md-3">New Generation Ceramic Tile </h1>
+                    <p class="mb-2 mb-md-5 d-sm-block">Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend
+                        aptent dapibus metus maecenas
+                        consequat. Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies.
+                        Pharetra sagittis sit aliquet at. Magna nam platea justo.</p>
+                    <a href="#" class="l-more">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products py-2 py-sm-5">
+            <div class="container text-center">
+                <h4 class="sect-h">Products</h4>
+                <p class="sect-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text.</p>
+
+                <div class="row pd-row">
+                    <div class="prod-col col-3 col-sm-6 col-md-6 col-lg-5">
+                        <div class="card card-products">
+                            <img src="images/bathroom.jpg" class="img-fluid" alt="Bathroom Tiles" loading="lazy">
+                            <div class="card-data">
+                                <h6>Bathroom Tiles</h6>
+                                <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-col col-3 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-products">
+                            <img src="images/marble.jpg" class="img-fluid" alt="Marble" loading="lazy">
+                            <div class="card-data">
+                                <h6>Marble</h6>
+                                <p>Ante mus blandit sapien sociosqu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-col col-6 col-sm-12 col-lg-4 stacked">
+                        <div class="row">
+                            <div class="col col-md-6 col-lg-12 sm-cl">
+                                <div class="card card-products">
+                                    <img src="images/outdoor.jpg" class="img-fluid" alt="Outdoor Flooring"
+                                        loading="lazy">
+                                    <div class="card-data">
+                                        <h6>Outdoor Flooring</h6>
+                                        <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-6 col-lg-12 sm-cl">
+                                <div class="card card-products">
+                                    <img src="images/kitchen.jpg" class="img-fluid" alt="Kitchen Interior"
+                                        loading="lazy">
+                                    <div class="card-data">
+                                        <h6>Kitchen Interior</h6>
+                                        <p>Ante mus blandit sapien sociosqu per consequat ad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects pb-2 pb-sm-5">
+            <div class="container text-center">
+                <h4 class="sect-h">Projects</h4>
+                <p class="sect-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text.</p>
+
+                <div class="row pt-0 pt-sm-5 g-2 g-sm-4">
+                    <div class="col-4 col-sm-6 col-md-3">
+                        <div class="pj-box">
+                            <img src="images/kingdomtower.jpg" class="img-fluid pj-img w-100" alt="Kingdom Tower"
+                                loading="lazy">
+                            <span class="pj-title">Kingdom Tower</span>
+                            <span class="pj-data">Marble Flooring</span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-6 col-md-3">
+                        <div class="pj-box">
+                            <img src="images/dubaimall.jpg" class="img-fluid pj-img w-100" alt="DubaiMall"
+                                loading="lazy">
+                            <span class="pj-title">Dubai mall</span>
+                            <span class="pj-data">Wood Flooring</span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-6 col-md-3">
+                        <div class="pj-box">
+                            <img src="images/king-road.jpg" class="img-fluid pj-img w-100" alt="King Road Offices"
+                                loading="lazy">
+                            <span class="pj-title">King Road Offices</span>
+                            <span class="pj-data">Outdoor Flooring</span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-6 col-md-3">
+                        <div class="pj-box">
+                            <img src="images/beach-tower.jpg" class="img-fluid pj-img w-100" alt="Beach Tower Alupang"
+                                loading="lazy">
+                            <span class="pj-title">Beach Tower Alupang</span>
+                            <span class="pj-data">Wood Flooring</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="va-btn mt-2 mt-sm-4 d-inline-block">View All</a>
+            </div>
+        </section>
+    </main>
+    <!-- MAIN - ENDS -->
+    <!-- FOOTER - STARTS -->
+    <footer class="d-none d-sm-block text-lg-start mt-auto py-5">
+        <div class="container em-link">
+            <div class="row">
+                <div class="col-3 col-md-4">
+                    <a href="#">
+                        <img src="images/logo.svg" class="img-fluid footer-logo w-100" alt="Logo" loading="lazy">
+                    </a>
+                    <div class="d-flex gap-2 social-media">
+                        <a href="#">
+                            <img src="images/facebook.svg" class="img-fluid" alt="facebook" loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="images/x.svg" class="img-fluid" alt="X" loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="images/instagram.svg" class="img-fluid" alt="instagram" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <ul>
+                        <li><span>Products</span></li>
+                        <li><a href="#">Sand Stone</a></li>
+                        <li><a href="#">Stone</a></li>
+                        <li><a href="#">Cement</a></li>
+                        <li><a href="#">Soft Stone</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li><span>Services</span></li>
+                        <li><a href="#">Measurement Service</a></li>
+                        <li><a href="#">Product Advice</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md-3">
+                    <ul>
+                        <li><span>Contact Information</span></li>
+                        <li>
+                            <address class="text-white">
+                                3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, <br> An Nuzhah, Riyadh 12474, <br>Saudi
+                                Arabia
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+    <!-- FOOTER - ENDS -->
+    <script>
+        function searchFunction() {
+            var element = document.getElementById("main-search");
+            element.classList.toggle("show");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
